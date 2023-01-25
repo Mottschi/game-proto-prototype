@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Proto-Prototype</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <script type='module' src="./main.js"></script>
 </head>
 <body>
     <header>
@@ -17,11 +17,22 @@
         <button id="generate-piece">Drop a game piece</button>
     </header>
     <main>
-        <section id="board"></section>     
+        <section id="scene-title">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui nihil rerum eveniet non pariatur, praesentium cupiditate reiciendis? Voluptates commodi doloribus adipisci sunt, consequatur ad accusamus delectus possimus culpa illo.
+            </p>
+            <button id="btn-start-game">Start Game</button>
+            <button id="btn-show-tutorial">Show Tutorial</button>
         </section>
-    </main>
-    <section>
+        <section id="scene-main">
+            <div id="board"></div>
+        </section>     
+        </section>
+        <section id="scene-game-over" hidden>
 
-    </section>
+        </section>
+
+    </main>
+
 </body>
 </html>

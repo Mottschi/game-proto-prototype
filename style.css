@@ -23,15 +23,52 @@
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 
+}
+
+main > #scene-title {
+    width: 60%;
+    text-align: center;
+    
 }
 
 header {
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
 header > button {
     margin: 1rem 1rem;
+}
+
+main > #scene-main {
+
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 3s linear, opacity 2s linear;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.grass {
+    background-color: forestgreen;
+}
+
+.water {
+    background-color: blue;
+}
+
+.rock {
+    background-color: grey;
 }
